@@ -35,22 +35,22 @@ export default function About(props) {
 	return (
         <>
       {pokemon && (
-        <div className="  w-4/5  m-auto bg-blue-100 bg-cover mt-4 shadow-2xl flex justify-center flex-col items-center">
-          <h3 className="text-2xl text-blue-500 uppercase">{pokemon.name}</h3>
-		  
+        <div className="  w-3/5  m-auto m:w-1/2 h-1/2 bg-blue-100 bg-cover mt-4 shadow-2xl flex justify-center flex-col items-center">
+          <h3 className="text-2xl text-blue-500 uppercase mt-0">{pokemon.name}</h3>
+          <h4 className="text-xl mt-2 text-red-700">Original</h4>
           <div className="flex justify-center">
 		  
             <img className="w-48" src={pokemon.sprites["front_default"]} alt="" />
             <img className="w-48" src={pokemon.sprites["back_default"]} alt="" />
           </div>
-          <h4 className="text-xl text-red-700">Original</h4>
+          <h4 className="text-xl text-red-700">Shiny</h4>
 		  
 		  <div className="flex justify-center">
 		  
             <img className="w-48" src={pokemon.sprites["front_shiny"]} alt="" />
             <img className="w-48" src={pokemon.sprites["back_shiny"]} alt="" />
           </div>
-          <h4 className="text-xl text-red-700">Shiny</h4>
+          
           
 					
                     <div className='flex justify-center p-1 mx-15 '>

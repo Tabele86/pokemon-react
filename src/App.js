@@ -3,7 +3,7 @@ import { Switch, BrowserRouter as Router, Route, Link } from "react-router-dom";
 import About from "./About";
 import Home from "./Home";
 import React, { useEffect, useState, useMemo } from "react";
-import Toggle from './Toggle';
+
 
 function App() {
   const [pokemon, setPokemon] = useState([]);
@@ -39,10 +39,7 @@ function App() {
             <header className="text-4xl text-red-700">Pokémon Gallery</header>
           </Link>
         </div>
-        {/* <div className="w-full flex justify-center">
-          <Toggle />
-        </div> */}
-        <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center ">
           <input
             onChange={($event) => setText($event.target.value)}
             placeholder="Enter Pokémon here"
