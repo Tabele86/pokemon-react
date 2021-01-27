@@ -43,8 +43,9 @@ export default function About(props) {
             <img className="w-48" src={pokemon.sprites["front_default"]} alt="" />
             <img className="w-48" src={pokemon.sprites["back_default"]} alt="" />
           </div>
+          <a target="blank" href="https://pokemon.fandom.com/wiki/Shiny_Pok%C3%A9mon ">
           <h4 className="text-xl text-red-700">Shiny</h4>
-		  
+          </a>
 		  <div className="flex justify-center">
 		  
             <img className="w-48" src={pokemon.sprites["front_shiny"]} alt="" />
